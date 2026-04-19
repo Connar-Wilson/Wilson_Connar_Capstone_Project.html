@@ -1,0 +1,229 @@
+html, body {
+    background-color: #3B3B3B;
+    color: #D32F2F;
+    height: 100%;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #0A0A0A;
+}
+
+#wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main {
+    margin-left: 300px;
+    padding-top: 20px;
+}
+
+header {
+    background-color: #0A0A0A;
+    color: #D32F2F;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    border: 2px solid #A62828;
+}
+
+header h1 {
+    padding-top: 15px;
+    margin-left: 25px;
+    font-size: 70px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    border: 2px solid #A62828;
+}
+
+nav {
+    background-color:#0A0A0A;
+    width: 202px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    height: 70vh;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #D32F2F;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 10px
+}
+
+footer {
+    background-color: #D32F2F;
+    color: #0A0A0A;
+    text-align: center;
+    clear: both;
+}
+
+#carbox1 {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#carbox1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#carbox2 {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#carbox2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#carbox2 {
+    padding-right: 0px;
+}
+
+#carinformation1 {
+   align-items: flex-start;
+}
+
+#carinformation2 {
+    align-items: flex-start;
+}
+
+#carinformation1,
+#carinformation2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 40px; /* spacing between the two rows */
+}
+
+#carinformation1 > * {
+    margin-right: 40px;
+}
+
+#carinformation2 > * {
+    margin-right: 40px;
+}
+
+
+#table1, #table2 {
+    background-color: #0A0A0A;
+    text-align: center;
+}
+
+#table1 table, 
+#table2 table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 125px;
+}
+
+#table1 tr:nth-child(odd),
+#table2 tr:nth-child(odd) {
+    background-color: #0A0A0A;
+    color: #D32F2F;
+}
+
+#table1 tr:nth-child(even),
+#table2 tr:nth-child(even) {
+    background-color: #D32F2F;
+    color: #0A0A0A;
+}
+
+#table1 td,
+#table2 td {
+    padding: 20px;
+}
+
+#table1 table,
+#table1 td,
+#table2 table,
+#table2 td {
+    border: 2px solid #A62828;
+    border-collapse: collapse;
+}
+
+/* Image Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gallery Images */
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #A62828;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Zoom Effect */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.definition-box {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #A62828;
+    background-color: #0A0A0A;
+    color: #D32F2F;
+    width: 70%;
+}
+
+.definition-box summary {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.definition-box p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 60%;
+    background-color: #0A0A0A;
+    color: #D32F2F;
+    border: 2px solid #A62828;
+    padding: 8px;
+}
+
+.contact-form button {
+    background-color: #D32F2F;
+    color: #0A0A0A;
+    border: 2px solid #A62828;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #A62828;
+    color: #0A0A0A;
+}
