@@ -16,7 +16,7 @@
     </header>
 
     <nav>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <br>
         <a href="old.html">Before</a>
         <br>
@@ -68,6 +68,19 @@
     </footer>
 
 </div>
+
+<script>
+    document.querySelector(".contact-form").addEventListener("submit", function(event) {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill out all fields before submitting.");
+            event.preventDefault();
+        }
+    });
+</script>
 
 </body>
 </html>
